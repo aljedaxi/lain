@@ -2,7 +2,6 @@
 #LET'S ALL LOVE LAIN!
 #thanks, Lain.
 #i will do what i can. we all must.
-#TODO: add a binary line to the start of bagua.csv so its searchable
 
 import random, sys
 from subprocess import call
