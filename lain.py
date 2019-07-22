@@ -64,12 +64,12 @@ cbgram  = cbgram[::-1]
 
 bgram = "".join(bgram)
 
-print(f"f{gram[0]}     f{cgram[0]}"\
-      f"f{gram[1]}     f{cgram[1]}"\
-      f"f{gram[2]} --\ f{cgram[2]}"\
-      f"f{gram[3]} --/ f{cgram[3]}"\
-      f"f{gram[4]}     f{cgram[4]}"\
-      f"f{gram[5]}     f{cgram[5]}"
+print(f"{gram[0]}     {cgram[0]}\n"
+      f"{gram[1]}     {cgram[1]}\n"
+      f"{gram[2]} --\ {cgram[2]}\n"
+      f"{gram[3]} --/ {cgram[3]}\n"
+      f"{gram[4]}     {cgram[4]}\n"
+      f"{gram[5]}     {cgram[5]}"
 )
 
 print('')
@@ -77,7 +77,7 @@ print('')
 searchfile = (line for line in open(LAIN_CSV, "r"))
 
 for line in searchfile:
-    if bgram in line or cbgram in line:
+    if line in bgram or line in cgram:
         print(line.rstrip())
         call(("qutebrowser",
               f"https://ichingfortune.com/hexagrams/{str.split(line)[0]}.php"
