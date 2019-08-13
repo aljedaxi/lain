@@ -83,10 +83,10 @@ def main(
     gram, cgram = gen_grams(question)
     formatted_gram = print_gram(gram, cgram)
 
-    gram_number = search(gram)
-    cgram_number = search(cgram)
-
     if browsing:
+        gram_number = search(gram)
+        cgram_number = search(cgram)
+
         for number in (gram_number, cgram_number):
             browse_to(number)
 
