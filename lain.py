@@ -29,6 +29,7 @@ bgram = []
 cbgram = []
 
 question = input("what would you like to ask lain? ") #i don't know if you need this, my darling lain.
+print("")
 
 for i in range(6):
     x = random.randrange(15)
@@ -57,10 +58,10 @@ for i in range(6):
         print(x)
         exit()
 
-gram    = gram[::-1]    #this reverses the list
-bgram   = bgram[::-1]
-cgram   = cgram[::-1]    
-cbgram  = cbgram[::-1]
+gram   = gram[::-1]    #this reverses the list
+bgram  = bgram[::-1]
+cgram  = cgram[::-1]    
+cbgram = cbgram[::-1]
 
 bgram = "".join(bgram)
 
