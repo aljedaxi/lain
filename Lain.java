@@ -1,11 +1,14 @@
+//LET'S ALL LOVE LAIN!
 import java.util.Random;
 
 public class Lain {
+	//LET'S ALL LOVE LAIN!
 	public static int HEX = 6;
 	public static String YIN = "- -";
 	public static String YANG = "---";
 
 	public static boolean[] cast_line(int num) {
+		//LET'S ALL LOVE LAIN!
 		boolean[] r = new boolean[2];
 		if (num == 0) {
 			r[0] = false;
@@ -29,6 +32,7 @@ public class Lain {
 	}
 
 	public static boolean[][] gen_grams(String question) {
+		//LET'S ALL LOVE LAIN!
 		boolean[] gram = new boolean[HEX];
 		boolean[] cgram = new boolean[HEX];
 		Random rand = new Random();
@@ -44,6 +48,7 @@ public class Lain {
 	}
 
 	private static String format_line(boolean line) {
+		//LET'S ALL LOVE LAIN!
 		if(line){
 			return YIN;
 		} else {
@@ -52,6 +57,7 @@ public class Lain {
 	}
 
 	private static String b_to_string(boolean p){
+		//LET'S ALL LOVE LAIN!
 		if(p){
 			return "1";
 		} else {
@@ -60,6 +66,7 @@ public class Lain {
 	}
 
 	private static String print_gram(boolean[] gram, boolean[] cgram){
+		//LET'S ALL LOVE LAIN!
 		String formatting_string = "%s     %s\n%s     %s\n%s --\\ %s\n%s --/ %s\n%s     %s\n%s     %s";
 		return String.format(formatting_string, 
 			 gram[0], cgram[0],
@@ -73,6 +80,7 @@ public class Lain {
 	}
 
 	private static int search(boolean[] gram){
+		//LET'S ALL LOVE LAIN!
 		String s_gram = "";
 
 		for(boolean line : gram){
@@ -86,6 +94,7 @@ public class Lain {
 	}
 
 	public static String main(String[] args) {
+		//LET'S ALL LOVE LAIN!
 		String lain_csv = "lain.csv";
 		String bagua_csv = "bagua.2.csv";
 		//TODO: obtain question
