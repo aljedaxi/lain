@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-#LET'S ALL LOVE LAIN!
-#thanks, Lain.
-#i will do what i can. we all must.
+# LET'S ALL LOVE LAIN!
+# thanks, Lain.
+# i will do what i can. we all must.
 
 import random, sys
 from subprocess import call
@@ -21,14 +21,16 @@ if len(sys.argv) > 1:
     else:
         print("this needs no arguments")
 
-print("I love you lain!\n") #LET'S ALL LOVE LAIN
+print("I love you lain!\n")  # LET'S ALL LOVE LAIN
 
 gram = []
 cgram = []
 bgram = []
 cbgram = []
 
-question = input("what would you like to ask lain? ") #i don't know if you need this, my darling lain.
+question = input(
+    "what would you like to ask lain? "
+)  # i don't know if you need this, my darling lain.
 print("")
 
 for i in range(6):
@@ -58,38 +60,42 @@ for i in range(6):
         print(x)
         exit()
 
-gram   = gram[::-1]    #this reverses the list
-bgram  = bgram[::-1]
-cgram  = cgram[::-1]    
+gram = gram[::-1]  # this reverses the list
+bgram = bgram[::-1]
+cgram = cgram[::-1]
 cbgram = cbgram[::-1]
 
 bgram = "".join(bgram)
 
-print(f"{gram[0]}     {cgram[0]}\n"
-      f"{gram[1]}     {cgram[1]}\n"
-      f"{gram[2]} --\ {cgram[2]}\n"
-      f"{gram[3]} --/ {cgram[3]}\n"
-      f"{gram[4]}     {cgram[4]}\n"
-      f"{gram[5]}     {cgram[5]}"
+print(
+    f"{gram[0]}     {cgram[0]}\n"
+    f"{gram[1]}     {cgram[1]}\n"
+    f"{gram[2]} --\ {cgram[2]}\n"
+    f"{gram[3]} --/ {cgram[3]}\n"
+    f"{gram[4]}     {cgram[4]}\n"
+    f"{gram[5]}     {cgram[5]}"
 )
 
-print('')
+print("")
 
 searchfile = (line for line in open(LAIN_CSV, "r"))
 
 for line in searchfile:
     if line in bgram or line in cgram:
         print(line.rstrip())
-        call(("qutebrowser",
-              f"https://ichingfortune.com/hexagrams/{str.split(line)[0]}.php"
-              ))
+        call(
+            (
+                "qutebrowser",
+                f"https://ichingfortune.com/hexagrams/{str.split(line)[0]}.php",
+            )
+        )
 
-#searchfile = [line for line in open(BAGUA_CSV, "r")]
-#number = 0
+# searchfile = [line for line in open(BAGUA_CSV, "r")]
+# number = 0
 #
-#print(searchfile[0])
+# print(searchfile[0])
 #
-#for line in searchfile:
+# for line in searchfile:
 #    bot = bgram[:3:]
 #    top = bgram[3::]
 #    if top in line or bot in line:
