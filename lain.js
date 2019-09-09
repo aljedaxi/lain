@@ -17,13 +17,13 @@ function rand_in_16() {
 }
 
 function cast_line(num) {
-	if(num == 0){
+	if (num == 0) {
 		return new Line(0,1);
 	} else if ((num > 0) && (num < 4)){
 		return new Line(1,0);
-	} else if ((num > 4) && (num < 9)){
+	} else if ((num > 3) && (num < 9)){
 		return new Line(1,1);
-	} else if ((num > 9) && (num < 16)){
+	} else if ((num > 8) && (num < 16)){
 		return new Line(0,0);
 	} else {
 		console.log(num);
@@ -109,11 +109,11 @@ describe('line', function() {
 });
 
 describe('cast_line', function() {
-	it('can create each permutation of yin and yang', function() {
-		let at0 = cast_line(0);
-		expect(at0).to.eql({
+	it('should handle 9', function() {
+		let at9 = cast_line(9);
+		expect(at9).to.eql({
 			line: 0,
-			change: 1,
+			change: 0,
 		});
 	});
 });
