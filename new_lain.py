@@ -17,7 +17,6 @@ def cast_line(num):
     else:
         raise Exception("Lain's fucking with you.")
 
-
 def gen_grams(question):
     caster = (cast_line(random.randrange(15)) for line in range(6))
 
@@ -34,11 +33,9 @@ def gen_grams(question):
 
     return gram, cgram
 
-
 def ichingfortune(number):
     ichingsite = ("https://ichingfortune.com/hexagrams/%s.php",)
     return ichingsite % number
-
 
 def the_iching(number):
     ichingsite = "http://the-iching.com/hexagram_%s"
@@ -48,7 +45,6 @@ def the_iching(number):
         return ichingsite % s_number[1]
     else:
         return ichingsite % s_number
-
 
 def main(
     question,
@@ -95,7 +91,6 @@ def main(
             browse_to(number)
 
     return formatted_gram
-
 
 if __name__ == "__main__":
     YIN = "- -"
