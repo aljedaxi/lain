@@ -1,5 +1,4 @@
 'use strict'
-let expect = require('chai').expect;
 
 class Line {
 	constructor(line, change) {
@@ -98,6 +97,7 @@ console.log(
 );
 
 /*
+let expect = require('chai').expect;
 describe('line', function() {
 	it('should contain a line and changed line', function() {
 		let line = new Line(1, 0);
