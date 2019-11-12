@@ -93,8 +93,8 @@ def main(
     return formatted_gram
 
 if __name__ == "__main__":
-    YIN = "- -"
-    YANG = "---"
+    YIN = "--  --"
+    YANG = "------"
     BAGUA_CSV = "bagua.2.csv"
     LAIN_CSV = "lain.csv"
     DESCRIPTION = f"""
